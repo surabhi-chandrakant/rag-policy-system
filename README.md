@@ -3,7 +3,7 @@
 
 A **Retrieval-Augmented Generation (RAG)** system.  
 The system answers questions about company policy documents using **semantic retrieval + Google Gemini**, with a strong focus on **prompt engineering, hallucination avoidance, and evaluation**.
----
+
 # Live app link : https://rag-policy-system-1.streamlit.app/
 ---
 
