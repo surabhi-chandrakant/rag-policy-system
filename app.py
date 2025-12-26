@@ -13,7 +13,7 @@ st.caption("RAG system using Google Gemini (100% Free Tier)")
 
 api_key = os.getenv("GOOGLE_API_KEY")
 if not api_key:
-    st.error("GOOGLE_API_KEY not found in .env")
+    st.error("GOOGLE_API_KEY not found in Streamlit Secrets")
     st.stop()
 
 
@@ -22,11 +22,16 @@ def load_rag():
     processor = DocumentProcessor()
     rag = RAGPipeline(api_key)
 
-    docs = []
-    base = "sample_policies"
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    POLICY_DIR = os.path.join(BASE_DIR, "sample_policies")
 
-    for filename in os.listdir(base):
-        path = os.path.join(base, filename)
+    if not os.path.exists(POLICY_DIR):
+        st.error("sample_policies folder not found in repo")
+        st.stop()
+
+    docs = []
+    for filename in os.listdir(POLICY_DIR):
+        path = os.path.join(POLICY_DIR, filename)
         text = processor.load(path)
         docs.extend(processor.chunk(text, filename))
 
