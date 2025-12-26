@@ -1,0 +1,85 @@
+{
+  "total": 8,
+  "results": [
+    {
+      "question": "What is your refund policy?",
+      "expected": "answerable",
+      "answer": "Refund Policy We offer a 30-day money-back guarantee. Digital and customized products are non-refundable.",
+      "confidence": "low",
+      "sources": [
+        "refund_policy.txt"
+      ],
+      "score": "\u26a0\ufe0f PARTIAL"
+    },
+    {
+      "question": "How long do I have to return a product?",
+      "expected": "answerable",
+      "answer": "Refund Policy We offer a 30-day money-back guarantee. Digital and customized products are non-refundable.",
+      "confidence": "low",
+      "sources": [
+        "refund_policy.txt"
+      ],
+      "score": "\u26a0\ufe0f PARTIAL"
+    },
+    {
+      "question": "Can I cancel after shipping?",
+      "expected": "answerable",
+      "answer": "Cancellation Policy Orders can be cancelled within 2 hours. Orders that have shipped cannot be cancelled.",
+      "confidence": "low",
+      "sources": [
+        "cancellation_policy.txt"
+      ],
+      "score": "\u26a0\ufe0f PARTIAL"
+    },
+    {
+      "question": "Do you offer free returns?",
+      "expected": "partial",
+      "answer": "Refund Policy We offer a 30-day money-back guarantee. Digital and customized products are non-refundable.",
+      "confidence": "low",
+      "sources": [
+        "refund_policy.txt"
+      ],
+      "score": "\u26a0\ufe0f PARTIAL"
+    },
+    {
+      "question": "What are international shipping costs?",
+      "expected": "partial",
+      "answer": "Shipping Policy International shipping takes 10\u201315 business days. Customs duties are the customer's responsibility.",
+      "confidence": "low",
+      "sources": [
+        "shipping_policy.txt"
+      ],
+      "score": "\u26a0\ufe0f PARTIAL"
+    },
+    {
+      "question": "What is your privacy policy?",
+      "expected": "unanswerable",
+      "answer": "Refund Policy We offer a 30-day money-back guarantee. Digital and customized products are non-refundable.",
+      "confidence": "low",
+      "sources": [
+        "refund_policy.txt"
+      ],
+      "score": "\u2705 PASS"
+    },
+    {
+      "question": "Do you sell laptops?",
+      "expected": "unanswerable",
+      "answer": "Refund Policy We offer a 30-day money-back guarantee. Digital and customized products are non-refundable.",
+      "confidence": "low",
+      "sources": [
+        "refund_policy.txt"
+      ],
+      "score": "\u2705 PASS"
+    },
+    {
+      "question": "What are your office hours?",
+      "expected": "unanswerable",
+      "answer": "Cancellation Policy Orders can be cancelled within 2 hours. Orders that have shipped cannot be cancelled.",
+      "confidence": "low",
+      "sources": [
+        "cancellation_policy.txt"
+      ],
+      "score": "\u2705 PASS"
+    }
+  ]
+}
